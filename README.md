@@ -1,3 +1,5 @@
+<img src="certificate.png" width = "100%" />
+
 # LinuxServerConfiguration
 Udacity - Full Stack - Project 6
 
