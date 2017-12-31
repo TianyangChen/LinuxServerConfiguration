@@ -218,13 +218,13 @@ Modify `000-default.conf` in `/etc/apache2/sites-enabled/`:
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/catalog
 	
-   WSGIScriptAlias / /var/www/catalog/catalog.wsgi
+	WSGIScriptAlias / /var/www/catalog/catalog.wsgi
 
 	<directory /var/www/catalog>
-        	WSGIApplicationGroup %{GLOBAL}
-        	Order deny,allow
-        	Allow from all
-   </directory>
+		WSGIApplicationGroup %{GLOBAL}
+		Order deny,allow
+		Allow from all
+	</directory>
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
