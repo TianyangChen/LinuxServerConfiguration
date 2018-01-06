@@ -40,6 +40,8 @@ $ sudo apt-get install postgresql
 $ sudo apt-get install git
 
 $ sudo apt-get install python python-pip
+# If you encounter "locale.Error: unsupported locale setting", run:
+	$ export LC_ALL=C
 $ sudo pip2 install flask packaging oauth2client redis passlib flask-httpauth
 $ sudo pip2 install sqlalchemy flask-sqlalchemy psycopg2 bleach requests
 ```
