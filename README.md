@@ -175,6 +175,8 @@ in `database_setup.py` :
 + __tablename__ = 'app_user'
 - engine = create_engine('sqlite:///catalog.db')
 + engine = create_engine('postgresql://catalog:password@localhost:5432/catalogdb')
+- user_id = Column(Integer, ForeignKey('user.id'))
++ user_id = Column(Integer, ForeignKey('app_user.id'))
 ```
 
 in `add_data.py`:
